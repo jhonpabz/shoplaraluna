@@ -1,4 +1,4 @@
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight } from "lucide-react";
 
 export const CallToAction = () => {
   return (
@@ -8,8 +8,8 @@ export const CallToAction = () => {
           Ready to Give Your Cat the Best?
         </h2>
         <p className="text-xl text-emerald-50 mb-8 max-w-2xl mx-auto">
-          Join thousands of satisfied pet owners who trust PurrfectCare for their feline's needs.
-          Get 15% off your first order!
+          Join thousands of satisfied pet owners who trust LaraLuna Pet Shop for
+          their feline's needs. Get 15% off your first order!
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="group bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all hover:shadow-lg flex items-center justify-center">

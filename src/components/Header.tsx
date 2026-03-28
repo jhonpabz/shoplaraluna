@@ -1,12 +1,12 @@
-import { ShoppingCart, Cat } from 'lucide-react';
-import { useStore } from '../store/useStore';
+import { ShoppingCart, Cat } from "lucide-react";
+import { useStore } from "../store/useStore";
 
 interface HeaderProps {
   onCartClick: () => void;
 }
 
 export const Header = ({ onCartClick }: HeaderProps) => {
-  const cart = useStore(state => state.cart);
+  const cart = useStore((state) => state.cart);
   const cartItemCount = cart.reduce((total, item) => total + item.quantity, 0);
 
   return (
@@ -15,17 +15,28 @@ export const Header = ({ onCartClick }: HeaderProps) => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Cat className="w-8 h-8 text-emerald-600" strokeWidth={2.5} />
-            <span className="text-2xl font-bold text-gray-900">PurrfectCare</span>
+            <span className="text-2xl font-bold text-gray-900">
+              LaraLuna Pet Shop
+            </span>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#products" className="text-gray-700 hover:text-emerald-600 transition-colors font-medium">
+            <a
+              href="#products"
+              className="text-gray-700 hover:text-emerald-600 transition-colors font-medium"
+            >
               Products
             </a>
-            <a href="#features" className="text-gray-700 hover:text-emerald-600 transition-colors font-medium">
+            <a
+              href="#features"
+              className="text-gray-700 hover:text-emerald-600 transition-colors font-medium"
+            >
               Why Choose Us
             </a>
-            <a href="#about" className="text-gray-700 hover:text-emerald-600 transition-colors font-medium">
+            <a
+              href="#about"
+              className="text-gray-700 hover:text-emerald-600 transition-colors font-medium"
+            >
               About
             </a>
           </div>

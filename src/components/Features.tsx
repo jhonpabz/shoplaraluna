@@ -1,11 +1,11 @@
-import { Truck, Award, MessageCircle, Heart } from 'lucide-react';
-import { features } from '../data/products';
+import { Truck, Award, MessageCircle, Heart } from "lucide-react";
+import { features } from "../data/products";
 
 const iconMap = {
   Truck,
   Award,
   MessageCircle,
-  Heart
+  Heart,
 };
 
 export const Features = () => {
@@ -14,10 +14,11 @@ export const Features = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Why Choose PurrfectCare?
+            Why Choose LaraLuna Pet Shop?
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            We're committed to providing the best products and service for your beloved cats.
+            We're committed to providing the best products and service for your
+            beloved cats.
           </p>
         </div>
 
@@ -36,9 +37,7 @@ export const Features = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600">
-                  {feature.description}
-                </p>
+                <p className="text-gray-600">{feature.description}</p>
               </div>
             );
           })}
