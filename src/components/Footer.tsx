@@ -1,14 +1,15 @@
-import { Cat, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import llLogo from "../assets/ll_logo.png";
 
 export const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+    <footer className="text-gray-300 bg-gray-900">
+      <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="grid gap-8 mb-8 md:grid-cols-4">
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <Cat className="w-8 h-8 text-emerald-500" strokeWidth={2.5} />
-              <span className="text-2xl font-bold text-white">
+            <div className="flex items-center mb-4 space-x-2">
+              <img src={llLogo} alt="LaraLuna logo" className="object-contain w-16 h-10" />
+              <span className="text-2xl font-bold text-white md:text-lg">
                 LaraLuna Pet Shop
               </span>
             </div>
@@ -19,12 +20,12 @@ export const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-white font-semibold text-lg mb-4">Shop</h3>
+            <h3 className="mb-4 text-lg font-semibold text-white">Shop</h3>
             <ul className="space-y-2">
               <li>
                 <a
                   href="#products"
-                  className="hover:text-emerald-500 transition-colors"
+                  className="transition-colors hover:text-emerald-500"
                 >
                   Cat Food
                 </a>
@@ -32,7 +33,7 @@ export const Footer = () => {
               <li>
                 <a
                   href="#products"
-                  className="hover:text-emerald-500 transition-colors"
+                  className="transition-colors hover:text-emerald-500"
                 >
                   Cat Litter
                 </a>
@@ -40,7 +41,7 @@ export const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="hover:text-emerald-500 transition-colors"
+                  className="transition-colors hover:text-emerald-500"
                 >
                   All Products
                 </a>
@@ -48,7 +49,7 @@ export const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="hover:text-emerald-500 transition-colors"
+                  className="transition-colors hover:text-emerald-500"
                 >
                   Special Offers
                 </a>
@@ -57,12 +58,12 @@ export const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-white font-semibold text-lg mb-4">Company</h3>
+            <h3 className="mb-4 text-lg font-semibold text-white">Company</h3>
             <ul className="space-y-2">
               <li>
                 <a
                   href="#about"
-                  className="hover:text-emerald-500 transition-colors"
+                  className="transition-colors hover:text-emerald-500"
                 >
                   About Us
                 </a>
@@ -70,7 +71,7 @@ export const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="hover:text-emerald-500 transition-colors"
+                  className="transition-colors hover:text-emerald-500"
                 >
                   Contact
                 </a>
@@ -78,7 +79,7 @@ export const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="hover:text-emerald-500 transition-colors"
+                  className="transition-colors hover:text-emerald-500"
                 >
                   Shipping Info
                 </a>
@@ -86,7 +87,7 @@ export const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="hover:text-emerald-500 transition-colors"
+                  className="transition-colors hover:text-emerald-500"
                 >
                   Returns
                 </a>
@@ -95,7 +96,7 @@ export const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-white font-semibold text-lg mb-4">Contact</h3>
+            <h3 className="mb-4 text-lg font-semibold text-white">Contact</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
                 <Mail className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" />
@@ -115,7 +116,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 text-center">
+        <div className="pt-8 text-center border-t border-gray-800">
           <p className="text-sm">
             &copy; {new Date().getFullYear()} LaraLuna Pet Shop. All rights
             reserved.
